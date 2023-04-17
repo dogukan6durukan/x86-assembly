@@ -12,7 +12,7 @@ Besides, Assembly syntax even can change in several Assemblers.
 
 ### What is Assembler?
 Writing an Assembly code on your local computer may require you to install an Assembler. Basically, Assembler itself is considered a compiler. An assembler program creates object code by translating combinations of mnemonics(i.e `mov, jmp`) and syntax for operations and addressing modes into their numerical
-equivalents. I installed [NASM](https://www.nasm.us/) for Assembler. Because as I mentioned above, Assembler syntaxes may change. For instance, an instruction to add memory data to a register in a x86-family processor might be add `eax,[ebx]`, in the original Intel syntax, whereas this would be written as : `addl (%ebx),%eax` in the AT&T syntax used by the GNU Assembler. 
+equivalents. I installed [NASM](https://www.nasm.us/) for Assembler. Because as I mentioned above, Assembler syntaxes may change. For instance, an instruction to add memory data to a register in a x86-family processor might be `add eax,[ebx]`, in the original Intel syntax, whereas this would be written as : `addl (%ebx),%eax` in the AT&T syntax used by the GNU Assembler. 
 
 ### Why choose NASM?
 So, after a bare-bone example, the main reason I'm using the NASM is: Almost every piece of code on Assembly is mostly based on Intel syntax that you would probably see in general and NASM itself is also a cross-platform Assembler. There is also called MASM assembler which aims at Windows and MS-DOS operating systems. Also even though it supports Intel syntax there are still some slight differences with NASM which may endeavor you for some reasons like some pieces of code you will try in general as a beginner. 
@@ -32,7 +32,7 @@ x86-64 :
 
 
 **Linux syscall table:**
-- [https://chromium.googlesource.com/chromiumos/docs/+/master/constants/syscalls.md](https://chromium.googlesource.com/chromiumos/docs/+/master/constants/syscalls.md)
+- [https://chromium.googlesource.com/chromiumos/docs/+/HEAD/constants/syscalls.md](https://chromium.googlesource.com/chromiumos/docs/+/HEAD/constants/syscalls.md)
 
 **Reference :**
 - [https://www.felixcloutier.com/x86/](https://www.felixcloutier.com/x86/)
